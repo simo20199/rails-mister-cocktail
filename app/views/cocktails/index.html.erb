@@ -1,0 +1,15 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/2-cocktails-served-on-luxury-tropical-resort-in-maldives-nadyaeugene-photography.jpg);">
+  <div class="container">
+    <h1>Casablanca best cocktails</h1>
+    <p>Try the best cocktails in town!</p>
+  </div>
+</div>
+
+<ul class="list-group list-group-banner">
+        <% @cocktails.each do |cocktail| %>
+          <li class="list-group-item">
+            <%= link_to cocktail.name, cocktail_path(cocktail) %>
+          </li>
+
+<% end %>
+      </ul>
